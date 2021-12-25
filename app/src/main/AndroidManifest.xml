@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wheresmymoney">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.StartActivity" />
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.AddAccountActivity" />
+        <activity android:name=".activities.CurrencyActivity" />
+        <activity android:name=".activities.EditCurrencyActivity" />
+        <activity android:name=".activities.AddCurrencyActivity" />
+        <activity android:name=".activities.CurrenciesActivity" />
+        <activity android:name=".activities.ActionActivity" />
+        <activity android:name=".activities.HelperActivity" />
+        <activity
+            android:name=".activities.AccountsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.AccountActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.EditBalanceActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.ExpenseActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.IncomeActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
